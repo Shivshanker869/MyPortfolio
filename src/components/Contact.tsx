@@ -64,22 +64,22 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "shiv.shanker.gupta@email.com",
-      href: "mailto:shiv.shanker.gupta@email.com",
+      value: "gopalgupta9639@gmail.com",
+      href: "mailto:gopalgupta9639@gmail.com",
       color: "primary"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/shiv-shanker-gupta",
-      href: "https://linkedin.com/in/shiv-shanker-gupta",
+      value: "linkedin.com/in/shivshankergupta",
+      href: "https://www.linkedin.com/in/shivshankergupta/",
       color: "secondary"
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/shiv-shanker-gupta",
-      href: "https://github.com/shiv-shanker-gupta",
+      value: "github.com/Shivshanker869",
+      href: "https://github.com/Shivshanker869",
       color: "accent"
     }
   ];
@@ -155,7 +155,10 @@ const Contact = () => {
                   <p className="text-muted-foreground text-sm mb-3">
                     Download my complete resume with detailed experience and skills
                   </p>
-                  <Button className="btn-tech text-sm px-4 py-2">
+                  <Button 
+                    className="btn-tech text-sm px-4 py-2"
+                    onClick={() => window.open('https://drive.google.com/file/d/1czvBbIM6dDSru76bNPhlK7-xD_gyruhU/view?usp=sharing', '_blank')}
+                  >
                     <Download className="w-4 h-4 mr-2" />
                     Download Resume
                   </Button>
