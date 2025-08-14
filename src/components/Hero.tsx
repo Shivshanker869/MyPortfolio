@@ -13,11 +13,14 @@ const Hero = () => {
   return (
     <section id="home" className="min-h-screen tech-bg flex items-center justify-center relative overflow-hidden">
       {/* Animated background particles */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-20 left-20 w-2 h-2 bg-primary rounded-full animate-pulse-glow"></div>
-        <div className="absolute top-40 right-32 w-1 h-1 bg-secondary rounded-full animate-pulse-glow" style={{animationDelay: '1s'}}></div>
-        <div className="absolute bottom-40 left-32 w-3 h-3 bg-accent rounded-full animate-pulse-glow" style={{animationDelay: '2s'}}></div>
-        <div className="absolute bottom-20 right-20 w-1 h-1 bg-primary rounded-full animate-pulse-glow" style={{animationDelay: '0.5s'}}></div>
+      <div 
+        className="absolute inset-0 opacity-20 cursor-pointer hover:opacity-30 transition-opacity duration-300"
+        onClick={() => console.log('Background particles clicked!')}
+      >
+        <div className="absolute top-20 left-20 w-2 h-2 bg-primary rounded-full animate-pulse-glow hover:bg-secondary transition-colors"></div>
+        <div className="absolute top-40 right-32 w-1 h-1 bg-secondary rounded-full animate-pulse-glow hover:bg-accent transition-colors" style={{animationDelay: '1s'}}></div>
+        <div className="absolute bottom-40 left-32 w-3 h-3 bg-accent rounded-full animate-pulse-glow hover:bg-primary transition-colors" style={{animationDelay: '2s'}}></div>
+        <div className="absolute bottom-20 right-20 w-1 h-1 bg-primary rounded-full animate-pulse-glow hover:bg-accent transition-colors" style={{animationDelay: '0.5s'}}></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-16">
