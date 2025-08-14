@@ -60,7 +60,7 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 className="group px-8 py-3 border-primary/50 hover:border-primary hover:bg-primary/10 transition-all duration-300"
-                onClick={() => window.open('https://i.postimg.cc/JnWX7pcm/Shiv-Shanker-Gupta-Resume.png', '_blank')}
+                onClick={() => window.open('https://drive.google.com/file/d/1czvBbIM6dDSru76bNPhlK7-xD_gyruhU/view?usp=sharing', '_blank')}
               >
                 <Download className="w-4 h-4 mr-2 group-hover:animate-bounce" />
                 Download Resume
