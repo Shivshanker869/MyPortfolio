@@ -40,7 +40,7 @@ const Hero = () => {
               </h1>
               <div className="bg-secondary/20 text-secondary px-4 py-2 rounded-lg inline-block mb-6 border border-secondary/30">
                 <span className="text-sm md:text-base font-medium tracking-wider">
-                  PASSIONATE QA ENGINEER
+                  QA ENGINEER
                 </span>
               </div>
             </div>
