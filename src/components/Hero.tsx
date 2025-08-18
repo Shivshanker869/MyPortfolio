@@ -9,6 +9,27 @@ const Hero = () => {
     }
   };
 
+  const handleDownloadResume = () => {
+    try {
+      // Convert Google Drive URL to direct download format
+      const downloadUrl = "https://drive.google.com/uc?export=download&id=1czvBbIM6dDSru76bNPhlK7-xD_gyruhU";
+      
+      // Create a temporary anchor element for download
+      const link = document.createElement('a');
+      link.href = downloadUrl;
+      link.download = 'Shiv_Shanker_Gupta_Resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      console.log('Resume download initiated');
+    } catch (error) {
+      console.error('Download failed, opening in new tab:', error);
+      // Fallback to opening in new tab if direct download fails
+      window.open('https://drive.google.com/file/d/1czvBbIM6dDSru76bNPhlK7-xD_gyruhU/view?usp=sharing', '_blank');
+    }
+  };
+
   return (
     <section id="home" className="min-h-screen tech-bg flex items-center justify-center relative overflow-hidden">
       {/* Animated background particles */}
@@ -62,7 +83,7 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 className="group px-8 py-3 border-primary/50 hover:border-primary hover:bg-primary/10 transition-all duration-300 cursor-pointer"
-                onClick={() => window.open('https://drive.google.com/file/d/1czvBbIM6dDSru76bNPhlK7-xD_gyruhU/view?usp=sharing', '_blank')}
+                onClick={handleDownloadResume}
               >
                 <Download className="w-4 h-4 mr-2 group-hover:animate-bounce" />
                 Download Resume
