@@ -62,7 +62,7 @@ const Hero = () => {
               </Button>
               <Button 
                 variant="outline" 
-                className="group px-8 py-3 border-primary/50 hover:border-primary hover:bg-primary/10 transition-all duration-300"
+                className="group px-8 py-3 border-primary/50 hover:border-primary hover:bg-primary/10 transition-all duration-300 cursor-pointer"
                 onClick={() => window.open('https://drive.google.com/file/d/1czvBbIM6dDSru76bNPhlK7-xD_gyruhU/view?usp=sharing', '_blank')}
               >
                 <Download className="w-4 h-4 mr-2 group-hover:animate-bounce" />
