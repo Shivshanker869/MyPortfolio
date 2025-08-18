@@ -1,6 +1,5 @@
 import { Download, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import profileImage from "@/assets/profile-image.jpg";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -76,9 +75,13 @@ const Hero = () => {
             <div className="relative">
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl glow-primary">
                 <img
-                  src={profileImage}
-                  alt="Shiv Shanker Gupta"
+                  src="https://i.postimg.cc/Qdn4kg9w/Snapchat-1246447595.jpg"
+                  alt="Shiv Shanker Gupta - QA Engineer"
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                  onError={(e) => {
+                    console.error('Failed to load profile image');
+                    e.currentTarget.src = '/placeholder.svg';
+                  }}
                 />
               </div>
               {/* Floating elements around profile */}
