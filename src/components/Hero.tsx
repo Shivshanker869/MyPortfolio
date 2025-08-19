@@ -82,10 +82,10 @@ const Hero = () => {
               </Button>
               <Button 
                 variant="outline" 
-                className="group px-8 py-3 border-primary/50 hover:border-primary hover:bg-primary/10 transition-all duration-300 cursor-pointer"
+                className="group px-8 py-3 text-base font-semibold border-2 border-primary/70 bg-primary/5 hover:border-primary hover:bg-primary/15 active:bg-primary active:text-primary-foreground active:border-primary active:scale-95 transition-all duration-300 cursor-pointer shadow-lg glow-primary animate-pulse-glow"
                 onClick={handleDownloadResume}
               >
-                <Download className="w-4 h-4 mr-2 group-hover:animate-bounce" />
+                <Download className="w-5 h-5 mr-2 group-hover:animate-bounce group-active:scale-110" />
                 Download Resume
               </Button>
             </div>
