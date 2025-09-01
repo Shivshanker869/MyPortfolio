@@ -161,6 +161,7 @@
       radial-gradient(circle at 80% 20%, hsl(var(--secondary)) 0%, transparent 50%),
       radial-gradient(circle at 40% 40%, hsl(var(--accent)) 0%, transparent 50%);
     animation: float 6s ease-in-out infinite;
+    pointer-events: none;
   }
   
   /* Glow Effects */
