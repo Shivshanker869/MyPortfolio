@@ -51,8 +51,7 @@ const Hero = () => {
     <section id="home" className="min-h-screen tech-bg flex items-center justify-center relative overflow-hidden">
       {/* Animated background particles */}
       <div 
-        className="absolute inset-0 opacity-20 cursor-pointer hover:opacity-30 transition-opacity duration-300"
-        onClick={() => console.log('Background particles clicked!')}
+        className="absolute inset-0 opacity-20 hover:opacity-30 transition-opacity duration-300 pointer-events-none"
       >
         <div className="absolute top-20 left-20 w-2 h-2 bg-primary rounded-full animate-pulse-glow hover:bg-secondary transition-colors"></div>
         <div className="absolute top-40 right-32 w-1 h-1 bg-secondary rounded-full animate-pulse-glow hover:bg-accent transition-colors" style={{animationDelay: '1s'}}></div>
