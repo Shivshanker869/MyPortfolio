@@ -119,7 +119,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl glow-primary">
                 <img
-                  src="https://i.postimg.cc/Qdn4kg9w/Snapchat-1246447595.jpg"
+                  src="https://i.postimg.cc/g2hG2wBS/cropped-circle-image-1.png"
                   alt="Shiv Shanker Gupta - QA Engineer"
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                   onError={(e) => {
